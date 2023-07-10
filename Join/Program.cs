@@ -16,7 +16,8 @@ List<Category> listOfCategory = new()
 
 var relationProductCategory = from product in listOfProduct
                               join category in listOfCategory
-                              on product.categoryId equals category.productId select new
+                              on product.categoryId equals category.categoryId
+                              select new
                               {
                                   productName= product.nameProduct, categoryName= category.categoryProduct
                               };

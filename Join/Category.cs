@@ -10,13 +10,13 @@ namespace Join
     {
         public int id;
         public string categoryProduct;
-        public int productId;
+        public int categoryId;
 
-        public Category(int id, string categoryProduct, int productId)
+        public Category(int id, string categoryProduct, int categoryId)
         {
             this.id = id;
             this.categoryProduct = categoryProduct;
-            this.productId = productId;
+            this.categoryId = categoryId;
         }
     }
 }
